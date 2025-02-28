@@ -1,0 +1,109 @@
+:root {
+    --primary: #00baf2;
+    --secondary: #95989a;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+}
+  
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Main inDecor */
+  
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../img/hrz-5.jpg");
+    background-size: cover;  /* Redimensiona a imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    height: 100vh; /* Ocupa toda a altura da janela */
+    padding: 0 500px;
+}
+  
+.main-content .left-column {
+    flex: 1;
+}
+
+.left-column h2 {
+    color: var(--primary);
+    font-size: 4rem;
+}
+
+.left-column p {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 20px;
+}
+
+.left-column #data {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.left-column strong {
+    color: var(--primary);
+}
+
+  
+.form-container {
+    width: 100%; /* Ocupa toda a largura do container */
+    max-width: 500px; /* Limita a largura do formulário */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo transparente */
+    border-radius: 8px;
+}
+  
+.form-container h2 {
+    color: var(--text-color);
+    margin-bottom: 1.3rem;
+    text-align: center;
+}
+  
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+  
+.form-container input,
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+  
+.form-container button {
+    background-color: var(--primary);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+  
+.form-container button:hover {
+    background-color: #0097c0; /* Cor do botão ao passar o mouse */
+}
+  
+@media (max-width: 768px) {
+.main-content {
+      flex-direction: column;
+      align-items: stretch;
+}
+  
+.form-container {
+      max-width: 90%;
+      margin-top: 20px;
+    }
+}
