@@ -5,76 +5,76 @@
     --text-secondary: #000;
     --text-tertiary: #5d5d5d;
 }
-  
+ 
 * {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-  
+ 
 /* Main inDecor */
-  
+ 
 .main-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: center; /* Centraliza os elementos verticalmente */
     background-image: url("../img/hrz-5.jpg");
     background-size: cover;  /* Redimensiona a imagem de fundo */
     background-position: center; /* Centraliza a imagem de fundo */
     background-color: rgba(0, 0, 0, 0.7);
     background-blend-mode: overlay;
-    height: 100vh; /* Ocupa toda a altura da janela */
-    padding: 0 500px;
+    height: 90vh; /* Ocupa toda a altura da janela */
+    padding: 0 300px;
 }
-  
+ 
 .main-content .left-column {
     flex: 1;
 }
-
+ 
 .left-column h2 {
     color: var(--primary);
     font-size: 4rem;
 }
-
-.left-column p {
+ 
+.left-column #evento {
     color: var(--text-color);
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 20px;
 }
-
+ 
 .left-column #data {
     color: var(--text-color);
-    font-size: 2rem;
+    font-size: 22px;
     margin-top: 20px;
 }
-
+ 
 .left-column strong {
     color: var(--primary);
+    font-size: 22px;
 }
-
-  
+ 
+ 
 .form-container {
     width: 100%; /* Ocupa toda a largura do container */
     max-width: 500px; /* Limita a largura do formulário */
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo transparente */
-    border-radius: 8px;
+    background-color: var(--secondary);
 }
-  
+ 
 .form-container h2 {
     color: var(--text-color);
     margin-bottom: 1.3rem;
     text-align: center;
 }
-  
+ 
 .form-container label {
     display: block;
     margin-bottom: 8px;
     color: var(--text-color);
 }
-  
+ 
 .form-container input,
 .form-container button {
     width: 100%;
@@ -84,26 +84,109 @@
     border-radius: 5px;
     font-size: 1rem;
 }
-  
+ 
 .form-container button {
     background-color: var(--primary);
     color: var(--text-color);
     border: none;
     cursor: pointer;
 }
-  
+ 
 .form-container button:hover {
     background-color: #0097c0; /* Cor do botão ao passar o mouse */
 }
-  
+ 
 @media (max-width: 768px) {
 .main-content {
       flex-direction: column;
       align-items: stretch;
 }
-  
+ 
 .form-container {
       max-width: 90%;
       margin-top: 20px;
     }
+}
+ 
+/* O que voçê vai aprender: */
+ 
+.gray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--secondary);
+    font-size: 24px;
+}
+ 
+.secondary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 250px;
+}
+ 
+.itens {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo da div */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 2.5rem;
+}
+ 
+.item-content {
+    display: flex;
+    flex-direction: column; /* Coloca a imagem e o texto em coluna */
+    justify-content: center; /* Centraliza verticalmente dentro do contêiner */
+    align-items: center; /* Centraliza horizontalmente dentro do contêiner */
+    text-align: center; /* Garante que o texto também fique centralizado */
+}
+ 
+.itens img {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem; /* Adiciona um pequeno espaço entre a imagem e o texto */
+}
+ 
+.itens p {
+    color: var(--text-secondary); /* Cor do texto */
+    font-size: 1.5rem; /* Tamanho do texto */
+}
+
+.destaques{
+    display: flex;
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    background-image: url("../img/hrz-1.jpg");
+    background-size: cover;  /* Redimensiona a imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    height: 90vh; /* Ocupa toda a altura da janela */
+    padding: 0 300px;
+}
+
+.destaques h2 {
+    color: var(--primary);
+    font-size: 4rem;
+    
+}
+
+.destaques p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.destaques-itens {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.destaques i   {
+    color: var(--primary);
+    font-size: 3.5rem;
+    margin-right: 10px;
+    
 }

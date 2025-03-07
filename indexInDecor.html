@@ -22,27 +22,72 @@
   <body>
     <header></header>
     <main class="main-content">
-        <div class="left-column">
-          <h2>InDecor</h2>
-          <p>UM EVENTO PARA <br> REVOLUCIONAR A <br>SUA CRIATIVIDADE</p>
-          <p id="data">Data do evento:</p>
-          <strong>Domingo, 28 de Maio, a partir das 14h</strong>
-        </div>
-        <div class="form-container">
-          <form action="/submit" method="post">
-            <h2>Preencha o formulário para receber os detalhes do evento</h2>
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" required />
+      <div class="left-column">
+        <h2>InDecor</h2>
+        <p id="evento">
+          UM EVENTO PARA <br />
+          REVOLUCIONAR A <br />SUA CRIATIVIDADE
+        </p>
+        <p id="data">Data do evento: <br /></p>
+        <strong>Domingo, 28 de Maio, a partir das 14h</strong>
+      </div>
+      <div class="form-container">
+        <form action="/submit" method="post">
+          <h2>Preencha o formulário para receber os detalhes do evento</h2>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required />
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
 
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" required />
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" required />
 
-            <button type="submit">QUERO ME INSCREVER</button>
-          </form>  
-        </div>
+          <button type="submit">QUERO ME INSCREVER</button>
+        </form>
+      </div>
     </main>
+    <section class="gray">
+      <p>O que voçê vai aprender:</p>
+    </section>
+    <section class="secondary-container">
+      <div class="itens">
+        <div class="item-content">
+          <img src="img/sqr-1.jpg" alt="" />
+          <p>
+            Alguma coisa muito legal, que vai fazer a diferença na vida do
+            participante.
+          </p>
+        </div>
+      </div>
+      <div class="itens">
+        <div class="item-content">
+          <img src="img/sqr-2.jpg" alt="" />
+          <p>
+            Alguma coisa muito legal, que vai fazer a diferença na vida do
+            participante.
+          </p>
+        </div>
+      </div>
+      <div class="itens">
+        <div class="item-content">
+          <img src="img/sqr-1.jpg" alt="" />
+          <p>
+            Alguma coisa muito legal, que vai fazer a diferença na vida do
+            participante.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="destaques">
+      <div class="destaques-itens">
+        <i class="bi bi-geo-alt-fill"></i>
+        <p>Rua do Evento, 1333 <br />Bairro <br />Abertura:14h</p>
+      </div>
+      <div class="destaques-itens">
+        <h2>Local de Destaque</h2>
+      </div>
+    </section>
+    <footer></footer>
   </body>
 </html>
